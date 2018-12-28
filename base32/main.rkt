@@ -11,6 +11,9 @@
 
 (provide
  (contract-out
+  [base32? predicate/c]
+  [base32=? (-> base32? base32? boolean?)]
+  [base32<? (-> base32? base32? boolean?)]
   [base32-decode (->* (input-port?)
                       (#:close? boolean?)
                       input-port?)]
@@ -18,9 +21,7 @@
   [base32-encode (->* (input-port?)
                       (#:close? boolean?)
                       input-port?)]
-  [base32-encode-bytes (-> bytes? base32?)]
-  [base32=? (-> base32? base32? boolean?)]
-  [base32<? (-> base32? base32? boolean?)]))
+  [base32-encode-bytes (-> bytes? base32?)]))
 
 ;;
 ;; Contracts
