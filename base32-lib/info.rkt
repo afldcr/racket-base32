@@ -1,13 +1,13 @@
 #lang info
 
 (define collection
-  'multi)
+  "base32")
 
 (define version
-  "0.1.1")
+  "0.2")
 
 (define deps
-  '(("base" #:version "7.0")))
+  '("base"))
 
 (define build-deps
   '("rackunit"))
