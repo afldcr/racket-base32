@@ -4,15 +4,16 @@
   "base32")
 
 (define version
-  "0.2")
+  "0.3")
 
 (define deps
   '("base"))
 
 (define build-deps
-  '("scribble-lib"
-    "base32-lib"
-    "racket-doc"))
+  '("racket-doc"
+    "rackunit"
+    "sandbox-lib"
+    "scribble-lib"))
 
 (define scribblings
-  '(("base32.scrbl" ())))
+  '(("manual.scrbl" ())))
