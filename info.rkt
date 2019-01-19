@@ -4,7 +4,7 @@
   "base32")
 
 (define version
-  "0.3")
+  "0.3.1")
 
 (define deps
   '("base"))
@@ -16,4 +16,4 @@
     "scribble-lib"))
 
 (define scribblings
-  '(("manual.scrbl" ())))
+  '(("base32-manual.scrbl" ())))
